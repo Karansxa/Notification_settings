@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".request.RequestFragment">
+
+    <EditText
+        android:id="@+id/requestname_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners2"
+        android:elevation="5dp"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:hint="Enter Patient Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/request_type_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/request_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="5dp"
+        android:entries="@array/request_type"
+        android:padding="10dp"
+        android:prompt="@string/enter_rtype"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/blood_type_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestname_edt"
+        tools:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/blood_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="5dp"
+        android:entries="@array/blood_group"
+        android:padding="10dp"
+        android:prompt="@string/enter_bgroup"
+        app:layout_constraintBottom_toTopOf="@+id/blood_amount_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/request_type_spinner" />
+
+    <Spinner
+        android:id="@+id/blood_amount_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="5dp"
+        android:entries="@array/blood_amount"
+        android:padding="10dp"
+        android:prompt="@string/enter_bamount"
+        app:layout_constraintBottom_toTopOf="@+id/requestdate_edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blood_type_spinner" />
+
+    <EditText
+        android:id="@+id/requestdate_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners2"
+        android:elevation="5dp"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:hint="Date of request"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/requestphone_edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blood_amount_spinner" />
+
+    <EditText
+        android:id="@+id/requestphone_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners2"
+        android:elevation="5dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:ems="10"
+        android:hint="Enter Phone number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/requesthospital_edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestdate_edt" />
+
+    <EditText
+        android:id="@+id/requesthospital_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners2"
+        android:elevation="5dp"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:hint="Enter Hospital name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/requestcity_edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestphone_edt" />
+
+    <EditText
+        android:id="@+id/requestcity_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners2"
+        android:elevation="5dp"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:hint="Enter city of hospital"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/requestdescription_edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requesthospital_edt" />
+
+    <EditText
+        android:id="@+id/requestdescription_edt"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners2"
+        android:elevation="5dp"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:hint="Why do you need?"
+        android:inputType="textMultiLine"
+        android:orientation="horizontal"
+        android:overScrollMode="ifContentScrolls"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestcity_edt" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_corners3"
+        android:elevation="5dp"
+        android:text="Request"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestdescription_edt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

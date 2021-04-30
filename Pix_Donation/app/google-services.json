@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "76302528048",
+    "firebase_url": "https://pix-donation-default-rtdb.firebaseio.com",
+    "project_id": "pix-donation",
+    "storage_bucket": "pix-donation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76302528048:android:afa7066203eefde21d87f5",
+        "android_client_info": {
+          "package_name": "com.impex.pbo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76302528048-lu8kn3pbptgs6t7khigia8petaqpob2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.impex.pbo",
+            "certificate_hash": "3df2a2e7f86a2d824045beec065d8a3c98b117be"
+          }
+        },
+        {
+          "client_id": "76302528048-ugmgpap9oolud58bl8gugtcqjv6260ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5pdrVgi_nhlehRqKjXzb436p-6DpO5sI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76302528048-ugmgpap9oolud58bl8gugtcqjv6260ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

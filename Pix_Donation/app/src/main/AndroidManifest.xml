@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theplasmadonation.jeewan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_donation"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_donation"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.theplasmadonation.jeewan.menuIeams.FeedbackSubmitted"></activity>
+        <activity android:name="com.theplasmadonation.jeewan.menuIeams.AboutUs" />
+        <activity android:name="com.theplasmadonation.jeewan.menuIeams.Send_Feedback" />
+        <activity android:name="com.theplasmadonation.jeewan.onboarding.screens.OnBoarding" />
+        <activity android:name="com.theplasmadonation.jeewan.profile.ProfileForm" />
+        <activity android:name="com.theplasmadonation.jeewan.MainScreenActivity" />
+        <activity android:name="com.theplasmadonation.jeewan.authentication.loginginscreen" />
+        <activity android:name="com.theplasmadonation.jeewan.authentication.signup" />
+        <activity android:name="com.theplasmadonation.jeewan.authentication.ManageOtp" />
+        <activity
+            android:name="com.theplasmadonation.jeewan.authentication.Mainlogin"
+            android:label="home" />
+        <activity android:name="com.theplasmadonation.jeewan.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
